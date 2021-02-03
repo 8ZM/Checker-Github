@@ -1,39 +1,10 @@
 import os
 
 os.system('cls' if os.name == 'nt' else 'clear')
-import random
-from colored import fg
-import requests
-import sys
-import sys as n
-#tweakPy
-import time as mm
-import json
-import time
-import json
-import secrets
-from colorama import Fore, init
 
-color3 = fg(2)
-color1 = fg(1)
-color2 = fg(50)
-colooor = fg(1)
-green_color = "\033[1;93m"
-O = '\033[33m'  # orange
-detect_color = "\033[m"
-red_color = "\033[m"
-end_banner_color = "\33[00m"
-C = "\033[0m"
-W = "\033[96m"
-BRed="\033[1;31m"
-Green="\033[0;36m"
-Yellow="\033[0;33m"
-count = 0
-def slow(M):
-    for c in M + '\n':
-        n.stdout.write(c)
-        n.stdout.flush()
-        mm.sleep(1. / 40)
+import requests
+import time
+
 
 banner = ('''
    _____ _ _   _           _        _____ _               _
@@ -43,9 +14,7 @@ banner = ('''
  | |__| | | |_| | | | |_| | |_) | | |____| | | |  __/ (__|   <  __/ |
   \_____|_|\__|_| |_|\__,_|_.__/   \_____|_| |_|\___|\___|_|\_\___|_|
  
-                           Coded by @berlin.py
-                       
-
+                           Coded by @680068
 ''')
 print(banner)
 
@@ -56,20 +25,12 @@ banner2 = """
  | | |_ | | __| '_ \| | | | '_ \  | |    | '_ \ / _ \/ __| |/ / _ \ '__|
  | |__| | | |_| | | | |_| | |_) | | |____| | | |  __/ (__|   <  __/ |
   \_____|_|\__|_| |_|\__,_|_.__/   \_____|_| |_|\___|\___|_|\_\___|_|
-
-
 """
 
-time.sleep(1)
+
 
 print(" ")
-
-print(" ")
-
-slow("- Github Checker ")
-
-print(" ")
-
+input("Press Enter To Start ... ")
 time.sleep(1)
 
 username = 'user.txt'
@@ -106,15 +67,14 @@ while True:
   rq = requests.get(url, headers=headers)
   if (user == ""):
     print("")
-    slow("- Done, Press Enter To Close Program ...")
-    input("")
+    input("- Done, Press Enter To Close Program ...")
     exit(0)
 
 
   if rq.status_code == 404:
       av +=1
       os.system('cls' if os.name == 'nt' else 'clear')
-      print(f'{banner2}\n- STARTING Check BY @berlin.py -\n\n=============================\n\n[-] Avilable : {av}\n\n[-] Taken : {tk}\n\n[-] Error : {er}\n\n=============================')
+      print(f'{banner2}\n- STARTING Check BY @680068 -\n\n=============================\n\n[-] Avilable : {av}\n\n[-] Taken : {tk}\n\n[-] Error : {er}\n\n=============================')
       with open('usersfound.txt', 'a') as x:
              x.write(user + '\n')
       
@@ -122,9 +82,9 @@ while True:
   elif rq.status_code == 200:
       tk +=1
       os.system('cls' if os.name == 'nt' else 'clear')
-      print(f'{banner2}\n- STARTING Check BY @berlin.py -\n\n=============================\n\n[-] Avilable : {av}\n\n[-] Taken : {tk}\n\n[-] Error : {er}\n\n=============================')
+      print(f'{banner2}\n- STARTING Check BY @680068 -\n\n=============================\n\n[-] Avilable : {av}\n\n[-] Taken : {tk}\n\n[-] Error : {er}\n\n=============================')
 
 
   else:
       er +=1
-      print(f'{banner2}\n- STARTING Check BY @berlin.py -\n\n=============================\n\n[-] Avilable : {av}\n\n[-] Taken : {tk}\n\n[-] Error : {er}\n\n=============================')
+      print(f'{banner2}\n- STARTING Check BY @680068 -\n\n=============================\n\n[-] Avilable : {av}\n\n[-] Taken : {tk}\n\n[-] Error : {er}\n\n=============================')
